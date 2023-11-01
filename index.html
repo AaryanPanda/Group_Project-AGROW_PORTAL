@@ -4,14 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Farmers' Login</title>
-    <link rel="stylesheet" href="./login.css">
+    <title>Agrow_Login</title>
+    <link rel="icon" href="./Assets/flag.png">
+    <link rel="stylesheet" href="./index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Itim&family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&family=Poppins:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -20,21 +22,24 @@
         <a href="https://www.india.gov.in/"><img src="./Assets/Logo.png" alt=""></a>
     </div>
     <div id="portal">
-        <p><b>FARMERS PORTAL</b></p>
+        <p><b>Agrow Portal</b></p>
     </div>
     <div id="container">
 
         <div id="login-box">
 
-            <input class="data" type="text" required placeholder="Username">
-            <input class="data" id="data2" type="password" minlength="8" required placeholder="Password">
+            <input class="data" id="username" type="text"  placeholder="Username">
+            <input class="data" id="data2" type="password" placeholder="Password">
             <p id="disclaimer">The Password must contain at least 8 characters</p>
-            <button class="button"> Log in </button>
+            <button onclick="next()" class="button"> Log in </button>
 
         </div>
 
     </div>
-    <div id="signup"><p>Sign up</p></div>
+    <div id="signup" onclick="main()">
+        <p>Sign up</p>
+    </div>
+    <script src="./index.js"></script>
 </body>
 
 </html>
